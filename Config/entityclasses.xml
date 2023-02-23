@@ -1,0 +1,67 @@
+<Archworld>
+
+	<!-- Removing the Entity of Vulture -->
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieVulture']"/>
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']"/>
+	
+	<!-- Creates a very difficult Feral Boar Boass -->
+		<append xpath="/entity_classes">
+		<entity_class name="animalBossGrace2" extends="animalBoar">
+		<property name="Tags" value="entity,animal,hostile,boar,perkAT03,boss"/>
+		<property name="IsEnemyEntity" value="true"/>
+		<property name="ReplaceMaterial0" value="Entities/Animals/Boar/Materials/GRACE"/>
+		<property name="ReplaceMaterial1" value="Entities/Animals/Boar/Materials/GRACE"/>
+		<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
+		<property name="Mass" value="1200"/>
+		<property name="Prefab" value="/Entities/Animals/Boar/AnimalBossGrace"/>
+		<property name="SoundRandom" value="Animals/Boar/boarroam"/>
+		<property name="SoundAlert" value="Animals/Boar/boaralert"/>
+		<property name="SoundHurt" value="Animals/Boar/boarpain"/>
+		<property name="SoundDeath" value="Animals/Boar/boardeath"/>
+		<property name="SoundAttack" value="Animals/Boar/boarattack"/>
+		<property name="SoundSense" value="Animals/Boar/boarsense"/>
+		<property name="SoundGiveUp" value="Animals/Boar/boargiveup"/>
+		<property name="DismemberMultiplierHead" value="0"/>
+
+		<property name="AITask-1" value="BreakBlock"/>
+		<property name="AITask-2" value="DestroyArea"/>
+		<property name="AITask-3" value="Territorial"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityPlayer,35,EntityZombie,30"/>
+		<property name="AITask-5" value="ApproachSpot"/>
+		<property name="AITask-6" value="Look"/>
+		<property name="AITask-7" value="Wander"/>
+		<property name="AITask-8" value=""/>
+		<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+		<property name="AITarget-2" value="BlockingTargetTask"/>
+		<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+		<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,3"/>
+		<property name="AITarget-5" value=""/>
+
+		<!-- Gameplay  -->
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="MoveSpeed" value=".15"/>
+		<property name="MoveSpeedAggro" value=".7, .75"/>
+		<property name="MoveSpeedPanic" value="1.1"/>
+
+		<property name="HandItem" value="meleeHandBossGrace"/>
+
+		<property name="ExperienceGain" value="120000"/><!-- XP strong -->
+		<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+		<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="100"/> <!-- animalBoar -->
+		<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="70"/>
+		<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="20"/>
+		<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="50"/>
+		<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
+		<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+		<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+		<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="20000"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value=".5"/> <!-- Feral damage -->
+		</effect_group>
+
+		</entity_class>
+	</append>
+	
+</Archworld>

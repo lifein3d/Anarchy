@@ -1,0 +1,20 @@
+<Archworld>
+
+	<!-- Removing EntityGroups of Vultures -->
+	<remove xpath="/entitygroups/entitygroup [@name='VultureGroup']"/>
+	<remove xpath="/entitygroups/entitygroup [@name='animalZombieVulture']"/>
+	<remove xpath="/entitygroups/entitygroup/entity [@name='animalZombieVulture']"/>
+	<remove xpath="/entitygroups/entitygroup [@name='animalZombieVultureRadiated']"/>
+	<remove xpath="/entitygroups/entitygroup/entity [@name='animalZombieVultureRadiated']"/>
+	
+	<set xpath="/entitygroups/entitygroup [@name='WildGameForest']/entity [@name='animalBoar']/@prob">5</set>
+	<set xpath="/entitygroups/entitygroup [@name='WildGameForest']/entity [@name='animalStag']/@prob">5</set>
+	<set xpath="/entitygroups/entitygroup [@name='WildGameForest']/entity [@name='animalDoe']/@prob">5</set>
+	<set xpath="/entitygroups/entitygroup [@name='WildGameForest']/entity [@name='animalWolf']/@prob">3</set>
+	
+	<!--Adding Boss to randomly spawn -->
+	<append xpath="/entitygroups/entitygroup [@name='WildGameForest']">
+	<entity name="animalBossGrace2" prob="0.75"/>
+	</append>
+	
+</Archworld>

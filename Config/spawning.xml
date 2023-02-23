@@ -1,0 +1,7 @@
+<Archworld>
+	
+	<!-- Removing Vulture Spawns -->
+	<setattribute xpath="/spawning/entityspawner/day/property [@value='VultureGroup']"
+		name="value">ZombiesAll</setattribute>
+		
+</Archworld>

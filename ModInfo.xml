@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="ArchWorld"/>
+		<Description value="Custom Changes"/>
+		<Author value="Arch_In3D"/>
+		<Version value="A20.6"/>
+		<Website value=""/>
+		<!--
+		 ++Removed Vultures from the game
+		 ++Increased Probability of Honey
+		 ++Increased Probabilty of Eggs in nest
+		 ++Created Boar Boss to randomly spawn in the forest
+		 ++Increased probability of book spawns
+		 ++Removed cross hairs off guns
+		 ++Increased Auger Digging Damage
+		 -->
+	</ModInfo>
+</xml>
