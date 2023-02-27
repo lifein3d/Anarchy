@@ -1,0 +1,11 @@
+<Anarchy>
+	
+<setattribute xpath="/windows/window [@name='windowLooting']/rect/grid"
+	name="rows">10
+</setattribute>
+
+<setattribute xpath="/windows/window [@name='windowLooting']/rect/grid"
+	name="cols">14
+</setattribute>
+	
+</Anarchy>

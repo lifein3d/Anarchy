@@ -1,3 +1,9 @@
 <Anarchy>
-	
+
+<append xpath="/recipes">
+	<recipe name="LargeStorageAnarchy" count="1">
+		<ingredient name="resourceWood" count="12"/>
+	</recipe>	
+</append>
+
 </Anarchy>

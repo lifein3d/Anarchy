@@ -5,10 +5,11 @@
 		name="value">80</setattribute>
 	
 	<!-- Removes Crosshair on Guns -->
+<!-- DOES NOT WORK, PLEASE FIX
 	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
-		
+-->
 </Anarchy>

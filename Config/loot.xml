@@ -1,23 +1,33 @@
 <Anarchy>
 	
-	<!-- Increasing egg chance in bird nests by one level -->
-	<set xpath="lootcontainers/lootgroup [@name='groupBirdNest02']/item [@name='foodEgg']/@loot_prob_template">med</set>
+<!-- Increasing egg chance in bird nests by one level -->
+<set xpath="lootcontainers/lootgroup [@name='groupBirdNest02']/item [@name='foodEgg']/@loot_prob_template">med</set>
+
+<!--Increase loot chance for books -->
+<set xpath="//lootgroup[@name='groupJunk03']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
+<set xpath="//lootgroup[@name='groupJunkNoBMats03']/item[@group='booksAllScaled']/@loot_prob_template">low</set>
+<set xpath="//lootgroup[@name='groupFileCabinet02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
+<set xpath="//lootgroup[@name='groupPOIStorageBox02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
+<set xpath="//lootgroup[@name='groupBookcase']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
+<set xpath="//lootgroup[@name='groupMailbox02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
+<set xpath="//lootgroup[@name='groupBookPile01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
+<set xpath="//lootgroup[@name='groupCrackabookShelves01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
+<set xpath="//lootgroup[@name='groupZpackReg02']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
+<set xpath="//lootgroup[@name='groupZpackStrong02']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
+<set xpath="//lootgroup[@name='groupZpackBoss02']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
+<set xpath="//lootgroup[@name='groupDesks01']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
+<set xpath="//lootgroup[@name='groupLuggage02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
+<set xpath="//lootgroup[@name='groupLocker02']/item[@group='booksAllScaled']/@loot_prob_template">medLow</set>
+<set xpath="//lootgroup[@name='groupHiddenStash01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
+
+<!-- Freezes the game in current state
+<setattribute xpath="/lootcontainers/lootcontainer [@name='playerStorage']"
+	name="size">10,8</setattribute>
+-->
 	
-	<!--Increase loot chance for books -->
-	<set xpath="//lootgroup[@name='groupJunk03']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
-	<set xpath="//lootgroup[@name='groupJunkNoBMats03']/item[@group='booksAllScaled']/@loot_prob_template">low</set>
-	<set xpath="//lootgroup[@name='groupFileCabinet02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
-	<set xpath="//lootgroup[@name='groupPOIStorageBox02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
-	<set xpath="//lootgroup[@name='groupBookcase']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
-	<set xpath="//lootgroup[@name='groupMailbox02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
-	<set xpath="//lootgroup[@name='groupBookPile01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
-	<set xpath="//lootgroup[@name='groupCrackabookShelves01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
-	<set xpath="//lootgroup[@name='groupZpackReg02']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
-	<set xpath="//lootgroup[@name='groupZpackStrong02']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
-	<set xpath="//lootgroup[@name='groupZpackBoss02']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
-	<set xpath="//lootgroup[@name='groupDesks01']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
-	<set xpath="//lootgroup[@name='groupLuggage02']/item[@group='booksAllScaled']/@loot_prob_template">med</set>
-	<set xpath="//lootgroup[@name='groupLocker02']/item[@group='booksAllScaled']/@loot_prob_template">medLow</set>
-	<set xpath="//lootgroup[@name='groupHiddenStash01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
-	
+<append xpath="/lootcontainers">
+	<lootcontainer name="LargeStorageAnarchy" count="0" size="14,10" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	</lootcontainer>
+</append>
+
 </Anarchy>

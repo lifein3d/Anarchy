@@ -1,6 +1,35 @@
 <Anarchy>
 	
-	<!-- Increase the chance of Honey from Tree stumps from 20% to 30% -->
-	<set xpath="blocks/block [@name='treeStump']/drop [@event='Destroy']/@prob">.3</set>
+<!-- Increase the chance of Honey from Tree stumps from 20% to 30% -->
+<set xpath="blocks/block [@name='treeStump']/drop [@event='Destroy']/@prob">.3</set>
+
+<!-- Custom Blocks -->
+<append xpath="/blocks">
+	<block name="LargeStorageAnarchy">
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="cntShippingCrateHero"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#Entities/LootContainers?crate_storeSignablePrefab.prefab"/>
+		<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+		<property name="DescriptionKey" value="LargeStorageAnarchyDesc"/>
+		<property name="Tags" value="door"/>
+		<property name="Class" value="SecureLootSigned"/>
+		<property name="LootList" value="LargeStorageAnarchy"/>
+		<property name="Material" value="MwoodReinforced"/>
+		<property name="MaxDamage" value="400"/>
+		<property name="Texture" value="572"/>
+		<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+		<property name="FuelValue" value="300"/>
+		<property class="RepairItems">
+			<property name="resourceWood" value="10"/>
+		</property>
+		<property name="DowngradeBlock" value="cntStorageGenericSignedInsecure"/>
+		<drop event="Destroy" name="resourceWood" count="1,3"/>
+		<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="EconomicValue" value="6"/>
+		<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</block>
+</append>
 	
 </Anarchy>
