@@ -1,4 +1,4 @@
-<Archworld>
+<Anarchy>
 
 	<!-- Removing EntityGroups of Vultures -->
 	<remove xpath="/entitygroups/entitygroup [@name='VultureGroup']"/>
@@ -17,4 +17,4 @@
 	<entity name="animalBossGrace2" prob="0.75"/>
 	</append>
 	
-</Archworld>
+</Anarchy>

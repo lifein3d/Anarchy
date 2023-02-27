@@ -1,4 +1,4 @@
-<Archworld>
+<Anarchy>
 	
 	<!-- Increasing egg chance in bird nests by one level -->
 	<set xpath="lootcontainers/lootgroup [@name='groupBirdNest02']/item [@name='foodEgg']/@loot_prob_template">med</set>
@@ -20,4 +20,4 @@
 	<set xpath="//lootgroup[@name='groupLocker02']/item[@group='booksAllScaled']/@loot_prob_template">medLow</set>
 	<set xpath="//lootgroup[@name='groupHiddenStash01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
 	
-</Archworld>
+</Anarchy>

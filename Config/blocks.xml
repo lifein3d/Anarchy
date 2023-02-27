@@ -1,6 +1,6 @@
-<Archworld>
+<Anarchy>
 	
 	<!-- Increase the chance of Honey from Tree stumps from 20% to 30% -->
 	<set xpath="blocks/block [@name='treeStump']/drop [@event='Destroy']/@prob">.3</set>
 	
-</Archworld>
+</Anarchy>

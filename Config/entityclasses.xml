@@ -1,4 +1,4 @@
-<Archworld>
+<Anarchy>
 
 	<!-- Removing the Entity of Vulture -->
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieVulture']"/>
@@ -64,4 +64,4 @@
 		</entity_class>
 	</append>
 	
-</Archworld>
+</Anarchy>
