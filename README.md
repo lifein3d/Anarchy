@@ -2,7 +2,7 @@
 Current log of customizations
 
 ---------Probability---------
-+ Increase probability of honey dropping off tree stumps
++ Increase probability of honey
 + Increase probability of books
 + Increased probability of eggs
 
