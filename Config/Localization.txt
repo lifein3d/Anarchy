@@ -1,4 +1,4 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 
-LargeStorageAnarchy,blocks,Container,,,"Large Custom Storage"
-LargeStorageAnarchyDesc,blocks,Container,,,"Large Custom Storage"
+LargeStorageAnarchy,blocks,Container,,,"Large Storage"
+LargeStorageAnarchyDesc,blocks,Container,,,"Large Storage"

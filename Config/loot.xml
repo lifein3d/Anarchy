@@ -20,10 +20,6 @@
 <set xpath="//lootgroup[@name='groupLocker02']/item[@group='booksAllScaled']/@loot_prob_template">medLow</set>
 <set xpath="//lootgroup[@name='groupHiddenStash01']/item[@group='booksAllScaled']/@loot_prob_template">high</set>
 
-<!-- Freezes the game in current state
-<setattribute xpath="/lootcontainers/lootcontainer [@name='playerStorage']"
-	name="size">10,8</setattribute>
--->
 	
 <append xpath="/lootcontainers">
 	<lootcontainer name="LargeStorageAnarchy" count="0" size="14,10" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
