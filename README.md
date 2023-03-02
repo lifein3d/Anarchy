@@ -9,6 +9,7 @@ Current log of customizations
 ---------Items---------
 + Created Large Storage (holds 140 stacks)
 + Increased Auger Damage
++ Removed Crosshairs from Guns and Crossbow (Excluding Bows)
 
 ---------Animals---------
 + Removed Vultures
