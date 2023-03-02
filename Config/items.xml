@@ -1,15 +1,21 @@
 <Anarchy>
 	
-	<!-- Increase Auger Damage to Blocks -->
-	<setattribute xpath="/items/item [@name='meleeToolPickT3Auger']/effect_group/passive_effect [@name='BlockDamage' and @operation='base_set']"
-		name="value">80</setattribute>
+<!-- Increase Auger Damage to Blocks -->
+<setattribute xpath="/items/item [@name='meleeToolPickT3Auger']/effect_group/passive_effect [@name='BlockDamage' and @operation='base_set']"
+	name="value">80</setattribute>
 	
-	<!-- Removes Crosshair on Guns -->
-<!-- DOES NOT WORK, PLEASE FIX
-	<set xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
--->
+<!-- Removes Crosshair on Guns but leaves them on bows excluding crossbow -->
+<setattribute xpath="/items/item [starts-with(@name,'gunHandgun')]/property [@name='CrosshairOnAim']"
+	name="value">false</setattribute>
+<setattribute xpath="/items/item [starts-with(@name,'gunShotgun')]/property [@name='CrosshairOnAim']"
+	name="value">false</setattribute>
+<setattribute xpath="/items/item [starts-with(@name,'gunRifle')]/property [@name='CrosshairOnAim']"
+	name="value">false</setattribute>
+<setattribute xpath="/items/item [starts-with(@name,'gunMG')]/property [@name='CrosshairOnAim']"
+	name="value">false</setattribute>
+<setattribute xpath="/items/item [starts-with(@name,'gunExplosives')]/property [@name='CrosshairOnAim']"
+	name="value">false</setattribute>
+<setattribute xpath="/items/item [contains(@name,'Crossbow')]/property [@name='CrosshairOnAim']"
+	name="value">false</setattribute>
+
 </Anarchy>
