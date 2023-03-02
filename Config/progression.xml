@@ -1,0 +1,36 @@
+<Anarchy>
+
+<!-- Adding Roles -->
+<append xpath="/progression/attributes[1]">
+	<attribute name="attAnarchy" name_key="attNameAnarchy" desc_key="attDescAnarchy" icon="ui_game_symbol_critical" min_level="1" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1.14">
+		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+	
+		<effect_group>
+			<requirement name="ItemHasTags" tags="attPerception,attStrength,attFortitude,attAgility,attIntellect"/>
+				<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
+				<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
+				
+			<effect_description level="1" desc_key="attAnarchyRank01Desc" long_desc_key="attAnarchyRank01LongDesc"/>
+			<effect_description level="2" desc_key="attAnarchyRank02Desc" long_desc_key="attAnarchyRank02LongDesc"/>
+			<effect_description level="3" desc_key="attAnarchyRank03Desc" long_desc_key="attAnarchyRank03LongDesc"/>
+			<effect_description level="4" desc_key="attAnarchyRank04Desc" long_desc_key="attAnarchyRank04LongDesc"/>
+			<effect_description level="5" desc_key="attAnarchyRank05Desc" long_desc_key="attAnarchyRank05LongDesc"/>
+			<effect_description level="6" desc_key="attAnarchyRank06Desc" long_desc_key="attAnarchyRank06LongDesc"/>
+			<effect_description level="7" desc_key="attAnarchyRank07Desc" long_desc_key="attAnarchyRank07LongDesc"/>
+			<effect_description level="8" desc_key="attAnarchyRank08Desc" long_desc_key="attAnarchyRank08LongDesc"/>
+			<effect_description level="9" desc_key="attAnarchyRank09Desc" long_desc_key="attAnarchyRank09LongDesc"/>
+			<effect_description level="10" desc_key="attAnarchyRank10Desc" long_desc_key="attAnarchyRank10LongDesc"/>
+		</effect_group>
+	</attribute>
+</append>
+
+</Anarchy>

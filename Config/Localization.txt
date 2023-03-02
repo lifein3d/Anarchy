@@ -2,3 +2,28 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english
 
 LargeStorageAnarchy,blocks,Container,,,"Large Storage"
 LargeStorageAnarchyDesc,blocks,Container,,,"Large Storage"
+
+attAnarchy,progression,Attribute,,,Roles
+attNameAnarchy,progression,Attribute,,,"Custom Roles"
+attDescAnarchy,progression,Attribute,,,"Choose a Profession to specialize in."
+
+attAnarchyRank01Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank02Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank03Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank04Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank05Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank06Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank07Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank08Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank09Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank10Desc,progression,Attribute,,,InsertSomething
+attAnarchyRank01LongDesc,progression,Attribute,,,"Deal 200% headshot damage"
+attAnarchyRank02LongDesc,progression,Attribute,,,"Deal 210% headshot damage"
+attAnarchyRank03LongDesc,progression,Attribute,,,"Deal 220% headshot damage"
+attAnarchyRank04LongDesc,progression,Attribute,,,"Deal 230% headshot damage"
+attAnarchyRank05LongDesc,progression,Attribute,,,"Deal 240% headshot damage"
+attAnarchyRank06LongDesc,progression,Attribute,,,"Deal 250% headshot damage"
+attAnarchyRank07LongDesc,progression,Attribute,,,"Deal 260% headshot damage"
+attAnarchyRank08LongDesc,progression,Attribute,,,"Deal 270% headshot damage"
+attAnarchyRank09LongDesc,progression,Attribute,,,"Deal 285% headshot damage"
+attAnarchyRank10LongDesc,progression,Attribute,,,"Deal 300% headshot damage"
