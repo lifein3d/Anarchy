@@ -1,13 +1,12 @@
+===List is organized by priority/ease===
 Larger Production Queue
-Rebalance end-game weapons (& tools?) Against each other
-Reevaluate blood moon mechanics (bloons style spawning?)
-Rebalance vehicles? (Motorcycle, 4x5, autogyro)
-Late game recipes outside of food?
-One time level up perks? Chosen similar to quest rewards?
 Larger outputs on crafting stations
-9mm conversion mod for .44?
 Additional paper recipes (skill points, books, etc)
 Temporary or permanent boosts from books (exp gain boost?)
+Rebalance end-game weapons (& tools?) Against each other
+Late game recipes outside of food?
+One time level up perks? Chosen similar to quest rewards?
+Rebalance vehicles? (Motorcycle, 4x5, autogyro)
 Combat buffs/penalties based on skills and zombies
-
-
+Reevaluate blood moon mechanics (bloons style spawning?)
+9mm conversion mod for .44? --not a fan of us but something we should talk about
